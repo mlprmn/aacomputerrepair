@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: #f9f9f9;
+    color: #333;
+}
+header, section, footer {
+    padding: 20px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+form input, form textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+}
+button {
+    padding: 10px 20px;
+    background: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #ffaa00;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 2s forwards;
+}
+.zoom-in {
+    animation: zoomIn ease 2s;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
