@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: #f9f9f9;
+  color: #333;
+}
+header, section, footer {
+  padding: 20px;
+  text-align: center;
+}
+.logo {
+  width: 250px;
+  max-width: 90%;
+  margin: 10px auto;
+}
+form input, form textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+}
+button {
+  padding: 10px 20px;
+  background: #0b3d91;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ffaa00;
+}
+.faq-section {
+  background: #005a9c;
+  color: white;
+  padding: 20px;
+}
+.faq-question {
+  background: white;
+  color: #005a9c;
+  border: none;
+  text-align: left;
+  width: 80%;
+  padding: 10px;
+  margin: 5px auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+.faq-answer {
+  display: none;
+  background: #e6f0ff;
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  width: 80%;
+  color: #000;
+}
+.drop-box {
+  margin: 20px auto;
+  width: 80%;
+  border: 2px dashed #ccc;
+  padding: 30px;
+  background: white;
+  font-size: 16px;
+}
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+.zoom-in {
+  animation: zoomIn 2s ease forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

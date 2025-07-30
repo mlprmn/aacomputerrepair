@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A & A Computer Repair</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".faq-question").forEach(btn => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("active");
+          let content = btn.nextElementSibling;
+          content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <img src="logo.jpeg" alt="A & A Computer Repair Logo" class="logo zoom-in"/>
+    <h1 class="fade-in">A & A Computer Repair</h1>
+    <p>Excellent service when you need it!</p>
+  </header>
+
+  <section>
+    <h2>Services</h2>
+    <ul>
+      <li>Virus Removal</li>
+      <li>Hardware Replacement</li>
+      <li>Data Recovery</li>
+      <li>Network Setup</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <button class="faq-question">What types of computers do you repair?</button>
+      <div class="faq-answer"><p>We repair all major brands: Windows, macOS, Linux laptops and desktops.</p></div>
+
+      <button class="faq-question">Do you offer remote support?</button>
+      <div class="faq-answer"><p>Yes, we offer secure remote support for many software issues.</p></div>
+
+      <button class="faq-question">How fast can you fix my computer?</button>
+      <div class="faq-answer"><p>Most issues are resolved within 24–48 hours.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interactive Diagnosis</h2>
+    <div class="drop-box" ondrop="event.preventDefault()" ondragover="event.preventDefault()">
+      💻 Drag & Drop a file here for review (e.g., screenshot, log)
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 A & A Computer Repair – Brooklyn, NY</p>
+    <p>Follow us: <a href="#">Facebook</a> · <a href="#">Instagram</a></p>
+  </footer>
+
+  <!-- Live Chat Widget -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/your_property_id_here/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+</body>
+</html>
